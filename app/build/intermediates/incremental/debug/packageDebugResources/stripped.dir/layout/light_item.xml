@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="20dp"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/item_backgroun"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/lightname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Light Name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            />
+        <!-- Switch for On/Off -->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light On/Off"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="12dp" />
+
+        <!-- Brightness Control -->
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/brightnessSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:progressDrawable="@drawable/brightness_bar"
+            android:thumb="@drawable/thumb_shape"
+            android:max="100"
+            android:progress="50" />
+
+                <!-- Color Picker Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/colorpickerbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Color"
+            android:layout_marginTop="12dp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

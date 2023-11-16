@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-74:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Shane D\\.gradle\\caches\\transforms-3\\29754f1bef497a69d129b162d122235a\\transformed\\appcompat-1.5.1\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Shane D\\.gradle\\caches\\transforms-3\\030d87d447c9bc4caf568a5a6ffc64db\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}
