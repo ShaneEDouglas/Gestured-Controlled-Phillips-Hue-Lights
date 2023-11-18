@@ -153,17 +153,17 @@
 87                android:value="androidx.startup" />
 87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Shane D\.gradle\caches\transforms-3\01404594e8d7678da881b553b8c3f45f\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 88            <meta-data
-88-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Shane D\.gradle\caches\transforms-3\fdb48aaead5c44b75b11dd9048dd8102\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-89                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-89-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Shane D\.gradle\caches\transforms-3\fdb48aaead5c44b75b11dd9048dd8102\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+88-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Shane D\.gradle\caches\transforms-3\af64c018ff22eb88188c39f8e9393d57\transformed\profileinstaller-1.2.0\AndroidManifest.xml:30:13-32:52
+89                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+89-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Shane D\.gradle\caches\transforms-3\af64c018ff22eb88188c39f8e9393d57\transformed\profileinstaller-1.2.0\AndroidManifest.xml:31:17-85
 90                android:value="androidx.startup" />
-90-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Shane D\.gradle\caches\transforms-3\fdb48aaead5c44b75b11dd9048dd8102\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+90-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Shane D\.gradle\caches\transforms-3\af64c018ff22eb88188c39f8e9393d57\transformed\profileinstaller-1.2.0\AndroidManifest.xml:32:17-49
 91            <meta-data
-91-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Shane D\.gradle\caches\transforms-3\af64c018ff22eb88188c39f8e9393d57\transformed\profileinstaller-1.2.0\AndroidManifest.xml:30:13-32:52
-92                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-92-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Shane D\.gradle\caches\transforms-3\af64c018ff22eb88188c39f8e9393d57\transformed\profileinstaller-1.2.0\AndroidManifest.xml:31:17-85
+91-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Shane D\.gradle\caches\transforms-3\fdb48aaead5c44b75b11dd9048dd8102\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+92                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+92-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Shane D\.gradle\caches\transforms-3\fdb48aaead5c44b75b11dd9048dd8102\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
 93                android:value="androidx.startup" />
-93-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Shane D\.gradle\caches\transforms-3\af64c018ff22eb88188c39f8e9393d57\transformed\profileinstaller-1.2.0\AndroidManifest.xml:32:17-49
+93-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Shane D\.gradle\caches\transforms-3\fdb48aaead5c44b75b11dd9048dd8102\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
 94        </provider>
 95
 96        <receiver

@@ -87,6 +87,9 @@ dependencies {
 
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2' // use the latest version
 
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+
     // App compat and UI things
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'

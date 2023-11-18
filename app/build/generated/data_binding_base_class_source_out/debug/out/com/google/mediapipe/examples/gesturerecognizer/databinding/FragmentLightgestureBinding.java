@@ -22,16 +22,7 @@ public final class FragmentLightgestureBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final CardView Rainbowcard;
-
-  @NonNull
-  public final CardView Usernamebuttontest;
-
-  @NonNull
-  public final ImageView colorimg;
-
-  @NonNull
-  public final TextView ideatext;
+  public final TextView launchremind;
 
   @NonNull
   public final TextView lightText;
@@ -40,38 +31,25 @@ public final class FragmentLightgestureBinding implements ViewBinding {
   public final CardView lightUpCard;
 
   @NonNull
-  public final ImageView lightcolorimg;
-
-  @NonNull
-  public final TextView lightideahome;
-
-  @NonNull
-  public final ImageView lightidealogo;
+  public final TextView lightgesturetitle;
 
   @NonNull
   public final ImageView lightimg;
 
   @NonNull
-  public final CardView maintitlecard;
+  public final CardView togglelightcard;
 
   private FragmentLightgestureBinding(@NonNull ConstraintLayout rootView,
-      @NonNull CardView Rainbowcard, @NonNull CardView Usernamebuttontest,
-      @NonNull ImageView colorimg, @NonNull TextView ideatext, @NonNull TextView lightText,
-      @NonNull CardView lightUpCard, @NonNull ImageView lightcolorimg,
-      @NonNull TextView lightideahome, @NonNull ImageView lightidealogo,
-      @NonNull ImageView lightimg, @NonNull CardView maintitlecard) {
+      @NonNull TextView launchremind, @NonNull TextView lightText, @NonNull CardView lightUpCard,
+      @NonNull TextView lightgesturetitle, @NonNull ImageView lightimg,
+      @NonNull CardView togglelightcard) {
     this.rootView = rootView;
-    this.Rainbowcard = Rainbowcard;
-    this.Usernamebuttontest = Usernamebuttontest;
-    this.colorimg = colorimg;
-    this.ideatext = ideatext;
+    this.launchremind = launchremind;
     this.lightText = lightText;
     this.lightUpCard = lightUpCard;
-    this.lightcolorimg = lightcolorimg;
-    this.lightideahome = lightideahome;
-    this.lightidealogo = lightidealogo;
+    this.lightgesturetitle = lightgesturetitle;
     this.lightimg = lightimg;
-    this.maintitlecard = maintitlecard;
+    this.togglelightcard = togglelightcard;
   }
 
   @Override
@@ -101,27 +79,9 @@ public final class FragmentLightgestureBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Rainbowcard;
-      CardView Rainbowcard = ViewBindings.findChildViewById(rootView, id);
-      if (Rainbowcard == null) {
-        break missingId;
-      }
-
-      id = R.id.Usernamebuttontest;
-      CardView Usernamebuttontest = ViewBindings.findChildViewById(rootView, id);
-      if (Usernamebuttontest == null) {
-        break missingId;
-      }
-
-      id = R.id.colorimg;
-      ImageView colorimg = ViewBindings.findChildViewById(rootView, id);
-      if (colorimg == null) {
-        break missingId;
-      }
-
-      id = R.id.ideatext;
-      TextView ideatext = ViewBindings.findChildViewById(rootView, id);
-      if (ideatext == null) {
+      id = R.id.launchremind;
+      TextView launchremind = ViewBindings.findChildViewById(rootView, id);
+      if (launchremind == null) {
         break missingId;
       }
 
@@ -137,21 +97,9 @@ public final class FragmentLightgestureBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.lightcolorimg;
-      ImageView lightcolorimg = ViewBindings.findChildViewById(rootView, id);
-      if (lightcolorimg == null) {
-        break missingId;
-      }
-
-      id = R.id.lightideahome;
-      TextView lightideahome = ViewBindings.findChildViewById(rootView, id);
-      if (lightideahome == null) {
-        break missingId;
-      }
-
-      id = R.id.lightidealogo;
-      ImageView lightidealogo = ViewBindings.findChildViewById(rootView, id);
-      if (lightidealogo == null) {
+      id = R.id.lightgesturetitle;
+      TextView lightgesturetitle = ViewBindings.findChildViewById(rootView, id);
+      if (lightgesturetitle == null) {
         break missingId;
       }
 
@@ -161,15 +109,14 @@ public final class FragmentLightgestureBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.maintitlecard;
-      CardView maintitlecard = ViewBindings.findChildViewById(rootView, id);
-      if (maintitlecard == null) {
+      id = R.id.togglelightcard;
+      CardView togglelightcard = ViewBindings.findChildViewById(rootView, id);
+      if (togglelightcard == null) {
         break missingId;
       }
 
-      return new FragmentLightgestureBinding((ConstraintLayout) rootView, Rainbowcard,
-          Usernamebuttontest, colorimg, ideatext, lightText, lightUpCard, lightcolorimg,
-          lightideahome, lightidealogo, lightimg, maintitlecard);
+      return new FragmentLightgestureBinding((ConstraintLayout) rootView, launchremind, lightText,
+          lightUpCard, lightgesturetitle, lightimg, togglelightcard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

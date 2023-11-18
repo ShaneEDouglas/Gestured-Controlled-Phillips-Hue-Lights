@@ -15,6 +15,9 @@
  */
 package com.google.mediapipe.examples.gesturerecognizer
 
+import android.Manifest
+import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
@@ -26,6 +29,7 @@ import com.google.mediapipe.examples.gesturerecognizer.databinding.ActivityMainB
 class MainActivity : AppCompatActivity() {
     private lateinit var activityMainBinding: ActivityMainBinding
     private val viewModel: MainViewModel by viewModels()
+    private val CAMERA_REQUEST_CODE = 100
 
 
 
@@ -34,9 +38,14 @@ class MainActivity : AppCompatActivity() {
         activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(activityMainBinding.root)
 
+
+
         }
 
-        override fun onBackPressed() {
+
+
+
+    override fun onBackPressed() {
             finish()
         }
 }

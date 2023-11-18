@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-74:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-75:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Shane D\\.gradle\\caches\\transforms-3\\f71a8e3795b0af35c54f59357d18d9a3\\transformed\\ColorPicker-2.3\\res\\values-night-v8\\values-night-v8.xml",

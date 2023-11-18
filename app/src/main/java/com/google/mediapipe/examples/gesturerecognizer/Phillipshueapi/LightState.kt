@@ -5,5 +5,4 @@ data class LightState(
     val bri: Int?,
     val xy: List<Float>?,
     val sat: Int?,
-
 )

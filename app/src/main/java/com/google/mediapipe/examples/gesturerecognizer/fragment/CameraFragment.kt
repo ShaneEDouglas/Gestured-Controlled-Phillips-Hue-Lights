@@ -17,6 +17,7 @@ package com.google.mediapipe.examples.gesturerecognizer.fragment
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
@@ -35,6 +36,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.mediapipe.examples.gesturerecognizer.GestureRecognizerHelper
+import com.google.mediapipe.examples.gesturerecognizer.MainLightScreen
 import com.google.mediapipe.examples.gesturerecognizer.MainViewModel
 import com.google.mediapipe.examples.gesturerecognizer.Phillipshueapi.HueApiViewModel
 import com.google.mediapipe.examples.gesturerecognizer.R
@@ -135,10 +137,10 @@ class CameraFragment : Fragment(),
     @SuppressLint("MissingPermission")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        with(fragmentCameraBinding.recyclerviewResults) {
-            layoutManager = LinearLayoutManager(requireContext())
-            adapter = gestureRecognizerResultAdapter
-        }
+//        with(fragmentCameraBinding.recyclerviewResults) {
+//            layoutManager = LinearLayoutManager(requireContext())
+//            adapter = gestureRecognizerResultAdapter
+//        }
 
         // Initialize our background executor
         backgroundExecutor = Executors.newSingleThreadExecutor()
@@ -388,12 +390,15 @@ class CameraFragment : Fragment(),
 
                         "Thumb_Up" -> {
                             apiviewModel.togglelight(true)
-                            Toast.makeText(requireContext(), "Thumbs up detected", Toast.LENGTH_SHORT).show()
                         }
 
                         "Thumb_Down" -> {
                             apiviewModel.togglelight(false)
-                            Toast.makeText(requireContext(), "Thumbs down detected", Toast.LENGTH_SHORT).show()
+                        }
+
+                        "Victory" -> {
+                            val intent = Intent(context, MainLightScreen::class.java)
+                            startActivity(intent)
                         }
                     }
                 } else {

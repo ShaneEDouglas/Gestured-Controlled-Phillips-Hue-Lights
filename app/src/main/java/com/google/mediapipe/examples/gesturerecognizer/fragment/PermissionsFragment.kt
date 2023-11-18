@@ -17,6 +17,7 @@ package com.google.mediapipe.examples.gesturerecognizer.fragment
 
 import android.Manifest
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.widget.Toast
@@ -25,6 +26,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.Navigation
+import com.google.mediapipe.examples.gesturerecognizer.MainLightScreen
 import com.google.mediapipe.examples.gesturerecognizer.R
 
 private val PERMISSIONS_REQUIRED = arrayOf(Manifest.permission.CAMERA)
@@ -48,6 +50,8 @@ class PermissionsFragment : Fragment() {
                     "Permission request denied",
                     Toast.LENGTH_LONG
                 ).show()
+
+                navigateBackToMainLightScreen()
             }
         }
 
@@ -77,6 +81,12 @@ class PermissionsFragment : Fragment() {
                 R.id.action_permissions_to_camera
             )
         }
+    }
+    private fun navigateBackToMainLightScreen() {
+        // Navigate back to the MainLightScreen
+        val intent = Intent(activity, MainLightScreen::class.java)
+        startActivity(intent)
+        activity?.finish() // Close the current activity
     }
 
     companion object {

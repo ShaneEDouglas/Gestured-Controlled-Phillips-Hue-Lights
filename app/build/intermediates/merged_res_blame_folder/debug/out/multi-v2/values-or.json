@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-74:/values-or/values-or.xml",
+            "outputFile": "com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-75:/values-or/values-or.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Shane D\\.gradle\\caches\\transforms-3\\030d87d447c9bc4caf568a5a6ffc64db\\transformed\\core-1.8.0\\res\\values-or\\values-or.xml",

@@ -36,8 +36,6 @@ class MainLightScreen : AppCompatActivity() {
                     true
                 }
 
-
-
                 else -> {false}
             }
         }
@@ -54,8 +52,3 @@ class MainLightScreen : AppCompatActivity() {
     }
 }
 
-private fun sayhi(nums:List<String>){
-    nums.forEach {
-        println("hi")
-    }
-}

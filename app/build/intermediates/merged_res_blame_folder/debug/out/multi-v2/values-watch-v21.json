@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-74:/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-75:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Shane D\\.gradle\\caches\\transforms-3\\29754f1bef497a69d129b162d122235a\\transformed\\appcompat-1.5.1\\res\\values-watch-v21\\values-watch-v21.xml",

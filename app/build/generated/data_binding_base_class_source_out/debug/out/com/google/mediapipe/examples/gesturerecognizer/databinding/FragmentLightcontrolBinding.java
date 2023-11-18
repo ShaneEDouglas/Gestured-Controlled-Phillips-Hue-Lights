@@ -4,6 +4,7 @@ package com.google.mediapipe.examples.gesturerecognizer.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -31,15 +32,20 @@ public final class FragmentLightcontrolBinding implements ViewBinding {
   public final RecyclerView lightrecyclerview;
 
   @NonNull
+  public final ImageView loadinggifImg;
+
+  @NonNull
   public final CardView togglelightcard;
 
   private FragmentLightcontrolBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView RvNoLights, @NonNull TextView lightcontroltitle,
-      @NonNull RecyclerView lightrecyclerview, @NonNull CardView togglelightcard) {
+      @NonNull RecyclerView lightrecyclerview, @NonNull ImageView loadinggifImg,
+      @NonNull CardView togglelightcard) {
     this.rootView = rootView;
     this.RvNoLights = RvNoLights;
     this.lightcontroltitle = lightcontroltitle;
     this.lightrecyclerview = lightrecyclerview;
+    this.loadinggifImg = loadinggifImg;
     this.togglelightcard = togglelightcard;
   }
 
@@ -88,6 +94,12 @@ public final class FragmentLightcontrolBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.loadinggifImg;
+      ImageView loadinggifImg = ViewBindings.findChildViewById(rootView, id);
+      if (loadinggifImg == null) {
+        break missingId;
+      }
+
       id = R.id.togglelightcard;
       CardView togglelightcard = ViewBindings.findChildViewById(rootView, id);
       if (togglelightcard == null) {
@@ -95,7 +107,7 @@ public final class FragmentLightcontrolBinding implements ViewBinding {
       }
 
       return new FragmentLightcontrolBinding((ConstraintLayout) rootView, RvNoLights,
-          lightcontroltitle, lightrecyclerview, togglelightcard);
+          lightcontroltitle, lightrecyclerview, loadinggifImg, togglelightcard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

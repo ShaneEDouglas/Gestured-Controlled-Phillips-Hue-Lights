@@ -2954,6 +2954,7 @@ drawable item_backgroun
 drawable lightbulb
 drawable lighterlogo
 drawable lightlogo
+drawable loadinggifcrop
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -3040,7 +3041,6 @@ id META
 id NO_DEBUG
 id Navigation_gesture
 id Navigation_light_control
-id Rainbowcard
 id Rv_no_lights
 id SHIFT
 id SHOW_ALL
@@ -3049,7 +3049,6 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
-id Usernamebuttontest
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3175,7 +3174,6 @@ id colorIndicator
 id colorPicker
 id colorPickerView
 id colorView
-id colorimg
 id colorpickerbutton
 id column
 id column_reverse
@@ -3267,6 +3265,7 @@ id fullscreen_header
 id gallery_fragment
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3283,7 +3282,6 @@ id honorRequest
 id horizontal_only
 id icon
 id icon_group
-id ideatext
 id ifRoom
 id ignore
 id ignoreRequest
@@ -3302,16 +3300,15 @@ id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
 id labeled
+id launchremind
 id layout
 id left
 id leftToRight
 id legacy
 id lightText
 id light_up_card
-id lightcolorimg
 id lightcontroltitle
-id lightideahome
-id lightidealogo
+id lightgesturetitle
 id lightimg
 id lightname
 id lightrecyclerview
@@ -3320,9 +3317,10 @@ id line3
 id linear
 id listMode
 id list_item
+id loadinggifImg
 id locale
 id ltr
-id maintitlecard
+id main_nav_graph
 id marquee
 id masked
 id match_constraint
@@ -3440,7 +3438,6 @@ id ratio
 id recentColorTitleTxt
 id recentColorsRV
 id rectangles
-id recyclerview_results
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3813,6 +3810,7 @@ menu light_bottom_menu
 menu menu_bottom_nav
 mipmap ic_launcher
 mipmap ic_launcher_round
+navigation main_nav_graph
 navigation nav_graph
 plurals mtrl_badge_content_description
 string Gesture_Light_control

@@ -5,90 +5,64 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/lightideahome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="LightIdea Explore"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/maintitlecard"
-        android:layout_width="400dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="30dp"
-        android:outlineAmbientShadowColor="@color/black"
-        android:padding="30dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="50dp"
-        app:layout_constraintEnd_toEndOf="@id/lightideahome"
-        app:layout_constraintStart_toStartOf="@id/lightideahome"
-        app:layout_constraintTop_toBottomOf="@id/lightideahome">
-
+        android:id = "@+id/togglelightcard"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:cardElevation="10dp"
+        >
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="30dp">
-
-            <ImageView
-                android:id="@+id/lightidealogo"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/lightlogo"
-
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            android:background="@drawable/title_background">
 
             <TextView
-                android:id="@+id/ideatext"
+                android:id="@+id/lightgesturetitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="Hi-five\n your world!"
-
-                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Hue Light Hand-Gesture Control"
+                android:textColor="@color/white"
                 android:textSize="25sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@id/lightidealogo"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <!--            <TextView-->
-        <!--                android:id="@+id/Welcometext"-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="match_parent"-->
-        <!--                android:gravity="center"-->
-        <!--                android:text="Welcome to LightIdea"-->
-        <!--                android:textColor="#000000"-->
-        <!--                android:textSize="40sp"-->
-        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--                app:layout_constraintEnd_toEndOf="parent"-->
-        <!--                app:layout_constraintStart_toStartOf="parent"-->
-        <!--                app:layout_constraintTop_toTopOf="parent" />-->
-
-
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/launchremind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Open the Gesture\nlight control Screen\nby pressing the button below"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/light_up_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/togglelightcard" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/light_up_card"
         android:layout_width="350dp"
         android:layout_height="70dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
         android:background="@drawable/maincardbackground"
         app:cardCornerRadius="20dp"
         app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@+id/maintitlecard"
-        app:layout_constraintStart_toStartOf="@+id/maintitlecard"
-        app:layout_constraintTop_toBottomOf="@+id/maintitlecard">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/togglelightcard">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -115,44 +89,28 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/Rainbowcard"
-        android:layout_width="350dp"
-        android:layout_height="70dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="20dp"
-        android:layout_margin="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/light_up_card"
-        app:layout_constraintStart_toStartOf="@+id/light_up_card"
-        app:layout_constraintTop_toBottomOf="@+id/light_up_card">
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/light_up_card">
 
-        <ImageView
-            android:id="@+id/lightcolorimg"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/colorlightbulb" />
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Gesture Instructions:\n1. Thumbs up to turn on your Hue light.\n2. Thumbs down to turn off your Hue light.\n3. Peace sign to return to this screen."
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/Usernamebuttontest"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="20dp"
-        app:cardBackgroundColor="@color/mp_color_secondary_variant"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@+id/Rainbowcard"
-        app:layout_constraintStart_toStartOf="@id/light_up_card">
 
-        <ImageView
-            android:id="@+id/colorimg"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
 
-    </androidx.cardview.widget.CardView>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

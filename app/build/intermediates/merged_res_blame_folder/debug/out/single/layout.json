@@ -1,46 +1,46 @@
 [
     {
-        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-75:\\layout\\info_bottom_sheet.xml",
-        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-78:\\layout\\info_bottom_sheet.xml"
+        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-76:\\layout\\light_item.xml",
+        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-79:\\layout\\light_item.xml"
     },
     {
-        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-75:\\layout\\item_gesture_recognizer_result.xml",
-        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-78:\\layout\\item_gesture_recognizer_result.xml"
+        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-76:\\layout\\item_gesture_recognizer_result.xml",
+        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-79:\\layout\\item_gesture_recognizer_result.xml"
     },
     {
-        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-75:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-78:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-76:\\layout\\info_bottom_sheet.xml",
+        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-79:\\layout\\info_bottom_sheet.xml"
     },
     {
-        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-75:\\layout\\fragment_lightgesture.xml",
-        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-78:\\layout\\fragment_lightgesture.xml"
+        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-76:\\layout\\fragment_lightgesture.xml",
+        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-79:\\layout\\fragment_lightgesture.xml"
     },
     {
-        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-75:\\layout\\fragment_help.xml",
-        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-78:\\layout\\fragment_help.xml"
+        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-76:\\layout\\fragment_help.xml",
+        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-79:\\layout\\fragment_help.xml"
     },
     {
-        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-75:\\layout\\activity_main_light_screen.xml",
-        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-78:\\layout\\activity_main_light_screen.xml"
+        "merged": "com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-76:/layout/fragment_camera.xml",
+        "source": "com.google.mediapipe.examples.gesturerecognizer.app-main-79:/layout/fragment_camera.xml"
     },
     {
-        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-75:\\layout\\fragment_gallery.xml",
-        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-78:\\layout\\fragment_gallery.xml"
+        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-76:\\layout\\fragment_camera.xml",
+        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-79:\\layout\\fragment_camera.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-75:/layout/fragment_lightcontrol.xml",
-        "source": "com.google.mediapipe.examples.gesturerecognizer.app-main-78:/layout/fragment_lightcontrol.xml"
+        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-76:\\layout\\activity_main_light_screen.xml",
+        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-79:\\layout\\activity_main_light_screen.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-75:/layout/light_item.xml",
-        "source": "com.google.mediapipe.examples.gesturerecognizer.app-main-78:/layout/light_item.xml"
+        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-76:\\layout\\fragment_lightcontrol.xml",
+        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-79:\\layout\\fragment_lightcontrol.xml"
     },
     {
-        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-75:\\layout\\fragment_camera.xml",
-        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-78:\\layout\\fragment_camera.xml"
+        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-76:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-79:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-75:\\layout\\fragment_lightcontrol.xml",
-        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-78:\\layout\\fragment_lightcontrol.xml"
+        "merged": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-76:\\layout\\fragment_gallery.xml",
+        "source": "C:\\Users\\Shane D\\.gradle\\daemon\\7.4\\com.google.mediapipe.examples.gesturerecognizer.app-main-79:\\layout\\fragment_gallery.xml"
     }
 ]

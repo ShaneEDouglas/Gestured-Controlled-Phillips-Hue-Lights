@@ -1,9 +1,11 @@
 package com.google.mediapipe.examples.gesturerecognizer.fragment
 
+import android.graphics.drawable.Animatable
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.SeekBar
 import android.widget.Switch
 import android.widget.TextView
@@ -13,6 +15,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.github.dhaval2404.colorpicker.ColorPickerDialog
 import com.github.dhaval2404.colorpicker.model.ColorShape
 import com.github.dhaval2404.colorpicker.model.ColorSwatch
@@ -34,54 +37,6 @@ class LightFragment: Fragment(R.layout.fragment_lightcontrol) {
         super.onViewCreated(view, savedInstanceState)
 
         val apiviewmodel = HueApiViewModel(requireContext())
-
-//        //Brightnessbar manual togggle
-////        val brightnessbartext = view.findViewById<TextView>(R.id.Brightnesstext)
-//        val brightbar = view.findViewById<SeekBar>(R.id.brightnessSeekBar)
-//
-//        //Light on/off
-////        val lightswitch = view.findViewById<SwitchCompat>(R.id.lighttoggleswitch)
-////
-////        lightswitch.setOnCheckedChangeListener { _, isChecked ->
-////            // Call your ViewModel function to toggle light
-////           apiviewmodel.togglelight(isChecked)
-////        }
-//
-//        brightbar.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
-//
-//
-//            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-//               apiviewmodel.togglelight(true)
-//
-//
-//
-//            }
-//            override fun onStartTrackingTouch(seekBar: SeekBar?) {
-//                TODO("Not yet implemented")
-//            }
-//
-//            override fun onStopTrackingTouch(seekBar: SeekBar?) {
-//                TODO("Not yet implemented")
-//            }
-//        } )
-//
-//        //Testing the color picker
-//        val colorbtn = view.findViewById<Button>(R.id.colorpickerbutton)
-//
-//
-//        colorbtn.setOnClickListener {
-//            ColorPickerDialog
-//                .Builder(requireContext())
-//                .setTitle("Pick Color")
-//                .setColorShape(ColorShape.CIRCLE)
-//                .setColorListener { color, colorHex ->
-//                    // Handle Color Selection
-//                   Log.d("Color","Error $colorHex")
-//
-//                }
-//                .show()
-//        }
-
 
 
 
@@ -107,11 +62,30 @@ class LightFragment: Fragment(R.layout.fragment_lightcontrol) {
                             apiviewmodel.updateLightColor(colorHex)
                         }
                         .show()
-
-
             }
-
         )
+
+
+
+        fun playgif(show:Boolean) {
+
+
+            val loadinggif = view.findViewById<ImageView>(R.id.loadinggifImg)
+            val animation = loadinggif.drawable
+
+            Log.d("LightFragment", "playgif called with show: $show")
+            if (show) {
+
+                Glide.with(requireContext())
+                    .asGif()
+                    .load(R.drawable.loadinggifcrop)
+                    .into(loadinggif)
+                loadinggif.visibility = View.VISIBLE
+            } else {
+
+                loadinggif.visibility = View.GONE
+            }
+        }
 
 
 
@@ -123,6 +97,16 @@ class LightFragment: Fragment(R.layout.fragment_lightcontrol) {
 
         apiViewModel.lightslivedata.observe(viewLifecycleOwner) { hueLights ->
             if (hueLights.isNullOrEmpty()) {
+                val loadinggif = view.findViewById<ImageView>(R.id.loadinggifImg)
+                loadinggif.visibility = View.VISIBLE
+
+                Glide.with(requireContext())
+                    .asGif()
+                    .load(R.drawable.loadinggifcrop)
+                    .into(loadinggif)
+
+                loadinggif.visibility = View.VISIBLE
+
                 view.findViewById<TextView>(R.id.Rv_no_lights).visibility = View.VISIBLE
                 lightrecyclerview.visibility = View.GONE
                 Log.i("LightFragment", "No lights found yet")
@@ -130,16 +114,28 @@ class LightFragment: Fragment(R.layout.fragment_lightcontrol) {
             } else {
 
                 view.findViewById<TextView>(R.id.Rv_no_lights).visibility = View.GONE
+
+                val loadinggif = view.findViewById<ImageView>(R.id.loadinggifImg)
+                loadinggif.visibility = View.VISIBLE
+
+                Glide.with(requireContext())
+                    .asGif()
+                    .load(R.drawable.loadinggifcrop)
+                    .into(loadinggif)
+
+                loadinggif.visibility = View.VISIBLE
+
+
                 lightrecyclerview.visibility = View.VISIBLE
 
-                val lightItems = hueLights?.map { hueLight ->
+                val lightItems = hueLights.map { hueLight ->
                     LightItem(
                         name = hueLight.name,
                         on = hueLight.state?.on,
                         bri = hueLight.state?.bri,
-                        xy = hueLight.state?.xy, // No color information
+                        xy = hueLight.state?.xy,
                         sat = hueLight.state?.sat
-                        // Add other properties as needed
+
 
                     )
                 }

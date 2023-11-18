@@ -21,23 +21,11 @@ class GestureLightFragment: Fragment(R.layout.fragment_lightgesture) {
         super.onViewCreated(view, savedInstanceState)
 
         val lightbtn = view.findViewById<CardView>(R.id.light_up_card)
-        val colorbtn = view.findViewById<CardView>(R.id.Rainbowcard)
-        val usernametestbtn = view.findViewById<CardView>(R.id.Usernamebuttontest)
-        //Will initialize it when first accesses using lazy.
 
 
         lightbtn.setOnClickListener {
             val intent = Intent(requireContext(), MainActivity::class.java)
             startActivity(intent)
         }
-
-        colorbtn.setOnClickListener {
-            TODO()
-        }
-
-        usernametestbtn.setOnClickListener {
-            viewModel.getusername("HomeBridge")
-        }
-
     }
 }
