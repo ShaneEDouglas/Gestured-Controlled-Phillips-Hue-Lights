@@ -14,7 +14,7 @@ import kotlin.math.pow
 //Viewmodel to handle the api call
 class HueApiViewModel(context: Context): ViewModel() {
     val retrofit = Retrofit.Builder()
-        .baseUrl("http://10.0.0.250/") // Bridge ip address
+        .baseUrl("YOUR HUE BRIDGE IP ADDRESS") // Bridge ip address
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
