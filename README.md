@@ -18,10 +18,10 @@ This application should be run on a physical Android device to take advantage of
 *   Android Studio
 
 ## Phillips Hue Bridge  
-![Android Studio](phillipshuedemo.png)
+![Android Studio](bridge.jpg)
 
 ## Phillips Hue Light Bulb used 
-![Android Studio](phillipshuedemo.png)
+![Android Studio](bulb.jpg)
 
 ### Android App Demo
 ![AppDemo](phillipshuedem.gif)
