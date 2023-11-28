@@ -19,7 +19,7 @@ This application should be run on a physical Android device to take advantage of
 *   Android Studio
 
 ### Android App Demo
-[Android Studio](https://developer.android.com/studio/index.html)
+[AppDemo](phillipshuedem.gif)
 
 
 ### Full Setup Demo
