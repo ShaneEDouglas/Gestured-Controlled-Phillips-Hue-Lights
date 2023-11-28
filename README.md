@@ -14,7 +14,6 @@ This application should be run on a physical Android device to take advantage of
 *   A physical Android device with a minimum OS version of SDK 24 (Android 7.0 -
     14 (most current) with developer mode enabled. The process of enabling developer mode
     may vary by device.
-    
 *   A Phillips Hue bridge and at least one Smart light
 *   Android Studio
 
