@@ -17,10 +17,10 @@ This application should be run on a physical Android device to take advantage of
 *   A Phillips Hue bridge and at least one Smart light
 *   Android Studio
 
-## Phillips Hue Bridge  
+### Phillips Hue Bridge  
 ![Android Studio](bridge.jpg)
 
-## Phillips Hue Light Bulb used 
+### Phillips Hue Light Bulb used 
 ![Android Studio](bulb.jpg)
 
 ### Android App Demo
