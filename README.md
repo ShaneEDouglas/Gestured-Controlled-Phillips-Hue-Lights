@@ -1,26 +1,31 @@
 
-# MediaPipe Tasks Gesture Recognizer Android Demo
+# MediaPipe and Phillips Hue Gesture Recognizer Android Demo
 
 ### Overview
 
-This is a camera app that can either continuously detects hand landmarks and classifies gestures (gesture name and confidence level) from camera frames seen by your device's front camera, an image, or a video from the device's gallery using a custom **task** file.
-
-The task file is downloaded by a Gradle script when you build and run the app. You don't need to do any additional steps to download task files into the project explicitly unless you wish to use your own custom gesture recognition task. If you do use your own task file, place it into the app's *assets* directory.
+This is a camera app that can either continuously detects hand landmarks and classifies gestures (gesture name and confidence level) and can interact with Phillips Hue smart lights.
 
 This application should be run on a physical Android device to take advantage of the camera.
 
-![gesture recognition demo](gesturerec.gif?raw=true "Gesture Recognition Demo")
-
-
 ## Build the demo using Android Studio
 
-### Prerequisites
-
-*   The **[Android Studio](https://developer.android.com/studio/index.html)** IDE. This sample has been tested on Android Studio Dolphin.
+### Prerequisites and Changes
 
 *   A physical Android device with a minimum OS version of SDK 24 (Android 7.0 -
-    Nougat) with developer mode enabled. The process of enabling developer mode
+    14 (most current) with developer mode enabled. The process of enabling developer mode
     may vary by device.
+    
+*   A Phillips Hue bridge and at least one Smart light
+*   Android Studio
+
+### Android App Demo
+[Android Studio](https://developer.android.com/studio/index.html)
+
+
+### Full Setup Demo
+[Android Studio](https://developer.android.com/studio/index.html)
+
+
 
 ### Building
 
@@ -35,6 +40,7 @@ This application should be run on a physical Android device to take advantage of
 
 *   With your Android device connected to your computer and developer mode
     enabled, click on the green Run arrow in Android Studio.
+
 
 ### Models used
 
