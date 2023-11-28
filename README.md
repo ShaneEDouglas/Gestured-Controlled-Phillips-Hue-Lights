@@ -1,5 +1,5 @@
 
-# MediaPipe and Phillips Hue Gesture Recognizer Android Demo
+# MediaPipe and Phillips Hue Gesture Recognizer Android Demo 💡
 
 ### Overview
 
@@ -22,8 +22,7 @@ This application should be run on a physical Android device to take advantage of
 
 
 ### Full Setup Demo
-[Android Studio](phillipshuedemo.mp4)
-
+![Android Studio](phillipshuedemo.mp4)
 
 
 ### Building
